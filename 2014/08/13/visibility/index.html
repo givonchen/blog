@@ -3,56 +3,54 @@
 <head>
   <meta charset="utf-8">
   
-  <title>手机上网页中使用伪协议打开本地APP研究 | 基吻的程序员之路</title>
+  <title>Page Visibility | 基吻的程序员之路</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="常用方法
+  <meta name="description" content="API介绍
+此API目前有两个属性和一个事件:  
+属性：
 
-location.href
-iframe
-window.open
+document.hidden: 布尔值，表示当前页面是否可见；
+document.visibilityState,取值如下：
 
-支持情况
 
-location.href 所有浏览器都能拉起APP，部分浏览器在没有安装应用的情况下会出现404；
-iframe 大多数浏览器能拉起APP，不会出现404；
-window.open,大多数浏览器能拉起APP，部分浏览器出现空白页面，部分浏览器会出现404页面（可以关闭）
+hidden: 页面为浏览器当前激活tab页面，而且窗口没有被最小化。
+visible: 页面不是浏览器当前激活tab页面，或者窗口被最小化。
+prerender: 页面在重新生成，对用户不可见。
 
-存在的问题
-在android机器">
+事件：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="手机上网页中使用伪协议打开本地APP研究">
-<meta property="og:url" content="http://givonchen.github.io/blog/blog/2014/08/11/scheme/">
+<meta property="og:title" content="Page Visibility">
+<meta property="og:url" content="http://givonchen.github.io/blog/blog/2014/08/13/visibility/">
 <meta property="og:site_name" content="基吻的程序员之路">
-<meta property="og:description" content="常用方法
+<meta property="og:description" content="API介绍
+此API目前有两个属性和一个事件:  
+属性：
 
-location.href
-iframe
-window.open
+document.hidden: 布尔值，表示当前页面是否可见；
+document.visibilityState,取值如下：
 
-支持情况
 
-location.href 所有浏览器都能拉起APP，部分浏览器在没有安装应用的情况下会出现404；
-iframe 大多数浏览器能拉起APP，不会出现404；
-window.open,大多数浏览器能拉起APP，部分浏览器出现空白页面，部分浏览器会出现404页面（可以关闭）
+hidden: 页面为浏览器当前激活tab页面，而且窗口没有被最小化。
+visible: 页面不是浏览器当前激活tab页面，或者窗口被最小化。
+prerender: 页面在重新生成，对用户不可见。
 
-存在的问题
-在android机器">
+事件：">
+<meta property="og:image" content="/images/visibility.png">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="手机上网页中使用伪协议打开本地APP研究">
-<meta name="twitter:description" content="常用方法
+<meta name="twitter:title" content="Page Visibility">
+<meta name="twitter:description" content="API介绍
+此API目前有两个属性和一个事件:  
+属性：
 
-location.href
-iframe
-window.open
+document.hidden: 布尔值，表示当前页面是否可见；
+document.visibilityState,取值如下：
 
-支持情况
 
-location.href 所有浏览器都能拉起APP，部分浏览器在没有安装应用的情况下会出现404；
-iframe 大多数浏览器能拉起APP，不会出现404；
-window.open,大多数浏览器能拉起APP，部分浏览器出现空白页面，部分浏览器会出现404页面（可以关闭）
+hidden: 页面为浏览器当前激活tab页面，而且窗口没有被最小化。
+visible: 页面不是浏览器当前激活tab页面，或者窗口被最小化。
+prerender: 页面在重新生成，对用户不可见。
 
-存在的问题
-在android机器">
+事件：">
 
   
     <link rel="alternative" href="/atom.xml" title="基吻的程序员之路" type="application/atom+xml">
@@ -91,14 +89,14 @@ window.open,大多数浏览器能拉起APP，部分浏览器出现空白页面�
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-scheme" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-visibility" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/blog/2014/08/11/scheme/" class="article-date">
-  <time datetime="2014-08-11T13:59:33.000Z" itemprop="datePublished">8月 11 2014</time>
+    <a href="/blog/2014/08/13/visibility/" class="article-date">
+  <time datetime="2014-08-13T14:11:32.000Z" itemprop="datePublished">8月 13 2014</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/blog/categories/移动端开发/">移动端开发</a>
+    <a class="article-category-link" href="/blog/categories/HTML5/">HTML5</a>
   </div>
 
   </div>
@@ -109,7 +107,7 @@ window.open,大多数浏览器能拉起APP，部分浏览器出现空白页面�
         
   
     <h1 class="article-title" itemprop="name">
-      手机上网页中使用伪协议打开本地APP研究
+      Page Visibility
     </h1>
   
 
@@ -117,35 +115,36 @@ window.open,大多数浏览器能拉起APP，部分浏览器出现空白页面�
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="常用方法">常用方法</h3>
-<ul>
-<li>location.href</li>
-<li>iframe</li>
-<li>window.open</li>
-</ul>
-<h3 id="支持情况">支持情况</h3>
-<ul>
-<li>location.href 所有浏览器都能拉起APP，部分浏览器在没有安装应用的情况下会出现404；</li>
-<li>iframe 大多数浏览器能拉起APP，不会出现404；</li>
-<li>window.open,大多数浏览器能拉起APP，部分浏览器出现空白页面，部分浏览器会出现404页面（<strong>可以关闭</strong>）</li>
-</ul>
-<h3 id="存在的问题">存在的问题</h3>
-<p><strong>在android机器上面，有些浏览器在没有安装要打开的APP的时候，会出现404页面，严重影响用户体验。</strong></p>
-<h3 id="最佳体验">最佳体验</h3>
+        <h2 id="API介绍">API介绍</h2>
+<p>此API目前有两个属性和一个事件:  </p>
+<p><strong>属性</strong>：</p>
 <ol>
-<li>优先考虑location.href；</li>
-<li>location.href出现404的浏览器，考虑使用iframe；</li>
-<li>上述2条不能满足的时候，考虑使用window.open,然后close该window；  </li>
+<li>document.hidden: 布尔值，表示当前页面是否可见；</li>
+<li>document.visibilityState,取值如下：</li>
 </ol>
-<p><strong>使用上述3条原则，针对不同的浏览器合理组合，采用组合拳的方式干掉android浏览器下面的404页面问题。</strong></p>
+<ul>
+<li>hidden: 页面为浏览器当前激活tab页面，而且窗口没有被最小化。</li>
+<li>visible: 页面不是浏览器当前激活tab页面，或者窗口被最小化。</li>
+<li>prerender: 页面在重新生成，对用户不可见。</li>
+</ul>
+<p><strong>事件</strong>：</p>
+<p>visibilitychange: 当可见状态变化时触发的事件。</p>
+<p><strong>应用场景</strong>：</p>
+<ul>
+<li>我们可以判断页面是否可见，然后进行选择性的加载页面中的内容，比如说广告图片，就可以先不加载，等用户接活当前页面时才去加载；</li>
+<li>页面中有ajax刷新动作时，可以判断页面是否是可见的，如果不可见，便停止自动刷新；</li>
+<li>等等等…</li>
+</ul>
+<p><strong>浏览器支持情况</strong>：</p>
+<p><img src="/images/visibility.png" alt="Page Visibility"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://givonchen.github.io/blog/2014/08/11/scheme/" data-id="k2gabv90ay10jm6g" class="article-share-link">Share</a>
+      <a data-url="http://givonchen.github.io/blog/2014/08/13/visibility/" data-id="d3mk52mwcp9nqr24" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/伪协议-scheme/">伪协议 scheme</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/HTML5/">HTML5</a></li></ul>
 
     </footer>
   </div>
@@ -153,19 +152,10 @@ window.open,大多数浏览器能拉起APP，部分浏览器出现空白页面�
     
 <nav id="article-nav">
   
-    <a href="/blog/2014/08/13/visibility/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Page Visibility
-        
-      </div>
-    </a>
   
-  
-    <a href="/blog/2014/08/09/markdown/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/blog/2014/08/11/scheme/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Markdown语法学习</div>
+      <div class="article-nav-title">手机上网页中使用伪协议打开本地APP研究</div>
     </a>
   
 </nav>
