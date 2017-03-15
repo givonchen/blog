@@ -4,9 +4,9 @@
   
   <link href="/blog/atom.xml" rel="self"/>
   
-  <link href="http://givonchen.github.io/"/>
+  <link href="http://givonchen.github.io/blog/"/>
   <updated>2017-03-14T15:53:47.781Z</updated>
-  <id>http://givonchen.github.io/</id>
+  <id>http://givonchen.github.io/blog/</id>
   
   <author>
     <name>givonchen</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://givonchen.github.io/2017/03/14/hello-world/"/>
-    <id>http://givonchen.github.io/2017/03/14/hello-world/</id>
+    <link href="http://givonchen.github.io/blog/2017/03/14/hello-world/"/>
+    <id>http://givonchen.github.io/blog/2017/03/14/hello-world/</id>
     <published>2017-03-14T15:53:47.777Z</published>
     <updated>2017-03-14T15:53:47.781Z</updated>
     
