@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>前端笔记</title>
   
-  <link href="/blog/atom.xml" rel="self"/>
+  <link href="/atom.xml" rel="self"/>
   
-  <link href="http://givonchen.com/blog/"/>
+  <link href="http://givonchen.com/"/>
   <updated>2017-03-14T15:53:47.781Z</updated>
-  <id>http://givonchen.com/blog/</id>
+  <id>http://givonchen.com/</id>
   
   <author>
     <name>givonchen</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://givonchen.com/blog/2017/03/14/hello-world/"/>
-    <id>http://givonchen.com/blog/2017/03/14/hello-world/</id>
+    <link href="http://givonchen.com/2017/03/14/hello-world/"/>
+    <id>http://givonchen.com/2017/03/14/hello-world/</id>
     <published>2017-03-14T15:53:47.777Z</published>
     <updated>2017-03-14T15:53:47.781Z</updated>
     
